@@ -169,7 +169,7 @@
 
 // Using the MPU-9250 breakout board, ADO is set to 0
 // Seven-bit device address is 110100 for ADO = 0 and 110101 for ADO = 1
-#define ADO 0
+#define ADO 1
 #if ADO
 #define MPU9250_ADDRESS 0x69  // Device address when ADO = 1
 #else
@@ -212,7 +212,7 @@ class MPU9250
     // Choose either 14-bit or 16-bit magnetometer resolution
     uint8_t Mscale = MFS_16BITS;
     // 2 for 8 Hz, 6 for 100 Hz continuous magnetometer data read
-    uint8_t Mmode = M_8HZ;
+    uint8_t Mmode = M_100HZ;
 
   public:
     float pitch, yaw, roll;
