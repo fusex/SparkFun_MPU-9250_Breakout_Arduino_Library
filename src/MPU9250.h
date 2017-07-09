@@ -169,7 +169,7 @@
 
 // Using the MPU-9250 breakout board, ADO is set to 0
 // Seven-bit device address is 110100 for ADO = 0 and 110101 for ADO = 1
-#define ADO 1
+#define ADO 0
 #if ADO
 #define MPU9250_ADDRESS 0x69  // Device address when ADO = 1
 #else
