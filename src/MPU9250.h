@@ -208,7 +208,7 @@ class MPU9250
     // TODO: Add setter methods for this hard coded stuff
     // Specify sensor full scale
     uint8_t Gscale = GFS_250DPS;
-    uint8_t Ascale = AFS_2G;
+    uint8_t Ascale = AFS_16G;
     // Choose either 14-bit or 16-bit magnetometer resolution
     uint8_t Mscale = MFS_16BITS;
     // 2 for 8 Hz, 6 for 100 Hz continuous magnetometer data read
